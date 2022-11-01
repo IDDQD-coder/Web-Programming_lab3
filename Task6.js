@@ -11,5 +11,5 @@ function findVowels(str)
 }
 console.log(findVowels('hello'));
 console.log(findVowels('why'));
-console.log(findVowels('hello dear friend, how do you like js?'));
+console.log(findVowels('hello dear friend, do you like js?'));
 

@@ -6,5 +6,6 @@ function palindrome(str)
     return false;
 }
 console.log(palindrome('racecar'));
-console.log(palindrome('pooop'));
+console.log(palindrome('looop'));
 console.log(palindrome('table, ,elbat'));
+console.log(palindrome('...!.,.'));

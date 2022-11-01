@@ -1,22 +1,22 @@
 
-console.log("" + 1 + 0);
-console.log("" - 1 + 0);
-console.log(true + false);
-console.log(6 / "3");
-console.log("2" * "3");
-console.log(4 + 5 + "px");
-console.log("$" + 4 + 5);
-console.log("4" - 2);
-console.log("4px" - 2);
-console.log(" -9 " + 5);
-console.log(" -9 " - 5 );
-console.log(null + 1);
-console.log(undefined + 1);
-console.log(" \t \n" - 2);
-console.log(5 > 4);
-console.log("ананас" > "яблоко");
-console.log("2" > "12");
-console.log(undefined == null);
-console.log(undefined === null);
-console.log(null == "\n0\n");
-console.log(null === +"\n0\n");
+console.log("" + 1 + 0);           //10 Преобразование в строку, а потом сложение символов
+console.log("" - 1 + 0);           //-1 Минус относится к строке, единица складывается с нулем
+console.log(true + false);         // 1 Преобразование в 1 + 0
+console.log(6 / "3");              // 2 Деление, пожтому преобразование в числа
+console.log("2" * "3");            // 6 Умножение, пожтому преобразование в числа
+console.log(4 + 5 + "px");         // 9px Сложение чисел, а потом добавление строки
+console.log("$" + 4 + 5);          // $45 Текстовый формат вывода, числа выодятся как символы
+console.log("4" - 2);              // 2 Вычитание происходит как математическая операция   
+console.log("4px" - 2);            // nan
+console.log(" -9 " + 5);           // -9 5 Сложение строки с символом
+console.log(" -9 " - 5 );          // -14 Математическое вычитание
+console.log(null + 1);             // 1 null преобразуется в 0
+console.log(undefined + 1);        // nan В строке undefined проиходит преобразование в nan
+console.log(" \t \n" - 2);         // -2 Символы обрезаются, из непустой строки считывается число
+console.log(5 > 4);                // true Сравнение чисел
+console.log("ананас" > "яблоко");  // false Сравнение символьно по Юникоду
+console.log("2" > "12");           // true Сравнение по первому символу
+console.log(undefined == null);    // true Значения равно
+console.log(undefined === null);   // false Значения равны, но объекты не идентичнычё
+console.log(null == "\n0\n");      // false null модет быть равен только undefined
+console.log(null === +"\n0\n");    // false объекты не идентичны
